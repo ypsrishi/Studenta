@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRSP - Community Resource Sharing Platform</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+</head>
+<body>
+
+
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a class="logo" href="#">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    </svg>
+    CRSP
+  </a>
+  <div class="nav-actions">
+    <button class="btn-login" onclick="go()">Log in</button>
+    <button class="btn-getstarted" onclick="go()">Get Started</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1 class="fade">
+      <span class="white">One Platform for All</span>
+      <span class="blue">Academic Resources</span>
+    </h1>
+    <p class="fade d1">
+      Access notes, PYQs, mentorship, and campus updates in one centralized place. Built by students, for students.
+    </p>
+    <div class="hero-btns fade d2">
+      <button class="btn-big-fill" onclick="go()">
+        Explore Resources
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </button>
+      <button class="btn-big-ghost" onclick="go()">
+        Join as a Senior
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM SECTION -->
+<section class="section-problem">
+  <div class="prob-left fade">
+    <h2>Tired of scattered<br>WhatsApp groups?</h2>
+    <div class="checklist">
+      <div class="check-row">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+        Stop begging for notes before exams
+      </div>
+      <div class="check-row">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+        Bridge the communication gap with seniors
+      </div>
+      <div class="check-row">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+        Never miss an important department notice
+      </div>
+      <div class="check-row">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+        Know exactly what facilities are available
+      </div>
+    </div>
+  </div>
+
+  <div class="testi-wrap fade d1">
+    <div class="testi-card">
+      <div class="testi-top">
+        <div class="testi-av" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);">S</div>
+        <div>
+          <div class="testi-name">Senior Dev</div>
+          <div class="testi-role">3rd Year, CS</div>
+        </div>
+      </div>
+      <div class="testi-msg">Just uploaded the complete OS notes from last semester. Good luck for mid-terms! &#128218;</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-top">
+        <div class="testi-av" style="background:linear-gradient(135deg,#166534,#22c55e);">J</div>
+        <div>
+          <div class="testi-name">Junior Student</div>
+          <div class="testi-role">1st Year, IT</div>
+        </div>
+      </div>
+      <div class="testi-msg">Thank you so much! This platform is a lifesaver. &#128080;</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="section-features">
+  <h2 class="sec-title fade">Everything you need to succeed</h2>
+  <p class="sec-sub fade d1">A comprehensive suite of tools designed specifically for college students in IT, CS, and DS departments.</p>
+
+  <div class="feat-grid">
+    <div class="feat-card fade d1">
+      <div class="feat-icon">
+        <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        </svg>
+      </div>
+      <div class="feat-title">Resource Repository</div>
+      <div class="feat-desc">Access notes, previous year question papers, and study materials organized by year and subject.</div>
+    </div>
+    <div class="feat-card fade d2">
+      <div class="feat-icon">
+        <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+      </div>
+      <div class="feat-title">Mentorship Module</div>
+      <div class="feat-desc">Connect with seniors, ask questions anonymously, and get guidance on internships and exams.</div>
+    </div>
+    <div class="feat-card fade d3">
+      <div class="feat-icon">
+        <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <path d="M8 21h8M12 17v4"/>
+        </svg>
+      </div>
+      <div class="feat-title">Facility Awareness</div>
+      <div class="feat-desc">Discover campus facilities like libraries, labs, and clubs with usage guides and availability.</div>
+    </div>
+    <div class="feat-card fade d4">
+      <div class="feat-icon">
+        <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+      </div>
+      <div class="feat-title">Centralized Notifications</div>
+      <div class="feat-desc">Stay updated with department announcements, exam notices, and workshop alerts in one place.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    </svg>
+    CRSP
+  </div>
+  <div class="footer-copy">&#169; 2026 Community Resource Sharing Platform. Built for students.</div>
+  <div class="footer-dev">Designed &amp; Developed by ypsTeam</div>
+</footer>
+<script src="js/index.js" defer></script>
+</body>
+</html>

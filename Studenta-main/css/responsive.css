@@ -1,0 +1,75 @@
+/* ===================== */
+/* Tablet */
+/* ===================== */
+@media (max-width: 1000px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 180px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+}
+
+
+/* ===================== */
+/* Mobile */
+/* ===================== */
+@media (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .main {
+        padding: 15px;
+    }
+}
+
+
+/* ===================== */
+/* Small Mobile */
+/* ===================== */
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .sidebar a {
+        padding: 10px;
+    }
+
+}

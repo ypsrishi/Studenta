@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facilities - Community Resource Sharing Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/facilities.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span class="topbar-title">Community Resource Sharing Platform</span>
+  <div class="topbar-actions">
+    <button class="topbar-btn">
+      <svg width="13" height="13" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/></svg>
+      
+    </button>
+    <button class="topbar-btn">
+      <svg width="13" height="13" fill="currentColor" viewBox="0 0 16 16"><path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/></svg>
+      
+    </button>
+  </div>
+</div>
+
+<div class="layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">CRSP</span>
+    </div>
+    <div class="sidebar-section-label">Community</div>
+    <div class="community-badge">ergjqie</div>
+    <nav>
+      <a class="nav-item" href="crsp_dashboard.html">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        Dashboard
+      </a>
+      <a class="nav-item" href="resources.html">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Resources
+      </a>
+      <a class="nav-item" href="mentorship.html">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Mentorship
+      </a>
+      <a class="nav-item active" href="facilities.html">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        Facilities
+      </a>
+      <a class="nav-item" href="notifications.html" onclick="fireToast('blue','Notifications','Notifications page coming soon!')">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        Notifications
+      </a>
+      <a class="nav-item" href="profile.html" onclick="fireToast('blue','Profile','Profile page coming soon!')">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Profile
+      </a>
+    </nav>
+    <div class="sidebar-bottom">
+      <button class="upload-resource-btn" onclick="fireToast('blue','Upload Resource','Upload feature coming soon!')">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        Upload Resource
+      </button>
+      <div class="user-profile">
+        <div class="user-avatar">R</div>
+        <div class="user-info">
+          <div class="user-name">Rahul Sharma</div>
+          <div class="user-role">Student</div>
+        </div>
+        <button class="logout-btn" onclick="window.location.href='login.html'">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        </button>
+      </div>
+      <div class="sidebar-copyright">© 2026 ypsTeam</div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <a class="back-link" href="crsp_dashboard.html">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back
+    </a>
+
+    <p class="page-subtitle">Discover and learn how to use available resources on campus.</p>
+
+    <!-- FACILITIES GRID -->
+    <div class="facilities-grid">
+
+      <!-- Central Library -->
+      <div class="facility-card" onclick="fireToast('blue', 'Central Library', 'Booking feature coming soon!')">
+        <div class="card-header">
+          <div class="facility-icon">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <span class="facility-name">Central Library</span>
+        </div>
+        <p class="facility-desc">Main campus library with over 50,000 books, journals, and quiet study areas.</p>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Usage Guide</div>
+            <div class="info-text">Show your student ID at the entrance. Books can be issued for 14 days.</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Availability</div>
+            <div class="info-text">Mon–Sat: 8 AM to 10 PM, Sun: 10 AM to 5 PM</div>
+          </div>
+        </div>
+        <button class="book-btn" onclick="event.stopPropagation(); fireToast('green','Booking Requested','Central Library seat reserved!')">Book a Seat</button>
+      </div>
+
+      <!-- Advanced Computing Lab -->
+      <div class="facility-card" onclick="fireToast('blue', 'Advanced Computing Lab', 'Booking feature coming soon!')">
+        <div class="card-header">
+          <div class="facility-icon">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <span class="facility-name">Advanced Computing Lab</span>
+        </div>
+        <p class="facility-desc">High-performance computing lab equipped with latest GPUs for ML/AI projects.</p>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Usage Guide</div>
+            <div class="info-text">Requires prior booking through the department portal. Only for 3rd and 4th year students.</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Availability</div>
+            <div class="info-text">Mon–Fri: 9 AM to 6 PM</div>
+          </div>
+        </div>
+        <button class="book-btn" onclick="event.stopPropagation(); fireToast('green','Booking Requested','Computing Lab slot reserved!')">Book a Slot</button>
+      </div>
+
+      <!-- Innovation Hub -->
+      <div class="facility-card" onclick="fireToast('blue', 'Innovation Hub', 'Booking feature coming soon!')">
+        <div class="card-header">
+          <div class="facility-icon">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <span class="facility-name">Innovation Hub (Makerspace)</span>
+        </div>
+        <p class="facility-desc">Workspace for hardware projects, 3D printing, and IoT development.</p>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Usage Guide</div>
+            <div class="info-text">Open to all. Consumables must be brought by students.</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Availability</div>
+            <div class="info-text">24/7 access with faculty approval</div>
+          </div>
+        </div>
+        <button class="book-btn" onclick="event.stopPropagation(); fireToast('green','Access Requested','Innovation Hub access granted!')">Request Access</button>
+      </div>
+
+      <!-- Seminar Hall -->
+      <div class="facility-card" onclick="fireToast('blue', 'Seminar Hall', 'Booking feature coming soon!')">
+        <div class="card-header">
+          <div class="facility-icon">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="facility-name">Seminar Hall</span>
+        </div>
+        <p class="facility-desc">Large air-conditioned seminar hall with projector and audio systems for events and workshops.</p>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Usage Guide</div>
+            <div class="info-text">Must be booked at least 3 days in advance. Faculty approval required for student events.</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Availability</div>
+            <div class="info-text">Mon–Fri: 9 AM to 8 PM, Sat: 10 AM to 4 PM</div>
+          </div>
+        </div>
+        <button class="book-btn" onclick="event.stopPropagation(); fireToast('green','Booking Requested','Seminar Hall booking submitted!')">Book Hall</button>
+      </div>
+
+      <!-- Sports Complex -->
+      <div class="facility-card" onclick="fireToast('blue', 'Sports Complex', 'Booking feature coming soon!')">
+        <div class="card-header">
+          <div class="facility-icon">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <span class="facility-name">Sports Complex</span>
+        </div>
+        <p class="facility-desc">Multi-sport facility with indoor badminton, table tennis courts and an outdoor cricket ground.</p>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Usage Guide</div>
+            <div class="info-text">Valid student ID required. Equipment available on loan from the sports room.</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Availability</div>
+            <div class="info-text">Daily: 6 AM to 9 AM and 4 PM to 8 PM</div>
+          </div>
+        </div>
+        <button class="book-btn" onclick="event.stopPropagation(); fireToast('green','Court Reserved','Sports Complex court booked!')">Reserve Court</button>
+      </div>
+
+      <!-- Medical Center -->
+      <div class="facility-card" onclick="fireToast('blue', 'Medical Center', 'More info coming soon!')">
+        <div class="card-header">
+          <div class="facility-icon">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <span class="facility-name">Medical Center</span>
+        </div>
+        <p class="facility-desc">On-campus health clinic with a doctor, nurse, and first-aid services for all students and staff.</p>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Usage Guide</div>
+            <div class="info-text">Walk-in allowed. Bring your student ID. Prescribed medicines are provided free of charge.</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="info-content">
+            <div class="info-label">Availability</div>
+            <div class="info-text">Mon–Sat: 9 AM to 5 PM. Emergency on-call 24/7</div>
+          </div>
+        </div>
+        <button class="book-btn" onclick="event.stopPropagation(); fireToast('green','Appointment Set','Medical appointment booked!')">Book Appointment</button>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toast-container"></div>
+<script src="js/facilities.js" defer></script>
+</body>
+</html>

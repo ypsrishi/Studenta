@@ -1,0 +1,322 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+  line-height:1.5;
+}
+
+/* TOPBAR */
+.topbar{
+  background:#020617;
+  padding:8px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:14px;
+  border-bottom:1px solid #1e293b;
+}
+
+.topbar-right{
+  display:flex;
+  gap:10px;
+}
+
+.topbar-btn{
+  background:#0f172a;
+  border:1px solid #334155;
+  color:white;
+  padding:6px 10px;
+  border-radius:6px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  border-bottom:1px solid #1e293b;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:20px;
+  font-weight:bold;
+  color:white;
+  text-decoration:none;
+}
+
+.nav-actions button{
+  margin-left:10px;
+}
+
+/* BUTTONS */
+.btn-login{
+  background:transparent;
+  border:1px solid #3b82f6;
+  color:#3b82f6;
+  padding:8px 16px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.btn-getstarted{
+  background:#3b82f6;
+  border:none;
+  color:white;
+  padding:8px 16px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.btn-big-fill{
+  background:#2563eb;
+  border:none;
+  padding:14px 24px;
+  border-radius:8px;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.btn-big-ghost{
+  background:transparent;
+  border:1px solid #3b82f6;
+  padding:14px 24px;
+  border-radius:8px;
+  color:#3b82f6;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  padding:120px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.white{
+  display:block;
+  color:white;
+}
+
+.blue{
+  display:block;
+  color:#3b82f6;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#cbd5f5;
+}
+
+.hero-btns{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+/* PROBLEM SECTION */
+.section-problem{
+  display:flex;
+  justify-content:space-between;
+  padding:80px 40px;
+  gap:40px;
+}
+
+.prob-left{
+  width:50%;
+}
+
+.prob-left h2{
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+.check-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:12px 0;
+}
+
+/* TESTIMONIAL */
+.testi-wrap{
+  width:40%;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.testi-card{
+  background:#020617;
+  padding:20px;
+  border-radius:10px;
+  border:1px solid #1e293b;
+}
+
+.testi-top{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.testi-av{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-weight:bold;
+}
+
+.testi-name{
+  font-weight:bold;
+}
+
+.testi-role{
+  font-size:12px;
+  color:#94a3b8;
+}
+
+/* FEATURES */
+.section-features{
+  padding:80px 40px;
+  text-align:center;
+}
+
+.sec-title{
+  font-size:32px;
+}
+
+.sec-sub{
+  color:#94a3b8;
+  margin:10px 0 40px;
+}
+
+.feat-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.feat-card{
+  background:#020617;
+  padding:25px;
+  border-radius:10px;
+  border:1px solid #1e293b;
+}
+
+.feat-title{
+  font-size:18px;
+  margin:10px 0;
+}
+
+.feat-desc{
+  color:#94a3b8;
+  font-size:14px;
+}
+
+/* FOOTER */
+.footer{
+  border-top:1px solid #1e293b;
+  padding:30px;
+  text-align:center;
+  margin-top:40px;
+}
+svg{
+  width:20px;
+  height:20px;
+}
+
+.footer-logo svg,
+.logo svg{
+  width: 24px;
+  height: 24px;
+}
+.footer-logo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.footer-logo svg{
+  width:22px;
+  height:22px;
+}
+.footer-copy{
+  font-size:14px;
+  color:#94a3b8;
+}
+
+.footer-dev{
+  font-size:13px;
+  color:#64748b;
+  margin-top:5px;
+}
+@media(max-width:900px){
+
+  .section-problem{
+    flex-direction:column;
+  }
+
+  .prob-left,
+  .testi-wrap{
+    width:100%;
+  }
+
+  .feat-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .feat-grid{
+    grid-template-columns:1fr;
+  }
+
+  .navbar{
+    padding:15px;
+  }
+
+}
+.footer-logo svg,
+.logo svg{
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Community Resource Sharing Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+
+
+<!-- MAIN -->
+<div class="main">
+  <div class="logo-wrap">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    </svg>
+  </div>
+
+  <h1 class="heading">Sign in to your account</h1>
+  <p class="subtext">Or <a href="#">create a new student account</a></p>
+
+  <div class="card">
+    <!-- TABS -->
+    <div class="tabs">
+      <button class="tab active" id="tab-student" onclick="switchTab('student')">Student</button>
+      <button class="tab" id="tab-moderator" onclick="switchTab('moderator')">Moderator</button>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="form-group">
+      <label class="form-label" id="email-label">College Email ID</label>
+      <input class="form-input" type="email" id="email-input" placeholder="student@college.edu" />
+      <span class="error-msg" id="email-error"></span>
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="form-group">
+      <label class="form-label">Password</label>
+      <input class="form-input" type="password" id="password-input" placeholder="Enter your password" />
+      <span class="error-msg" id="password-error"></span>
+    </div>
+
+    <!-- COMMUNITY PASSKEY (student only) -->
+    <div class="form-group passkey-group" id="passkey-group">
+      <label class="form-label">Community Passkey</label>
+      <input class="form-input" type="text" id="passkey-input" placeholder="e.g. CS-BATCH-2026" />
+      <span class="error-msg" id="passkey-error"></span>
+    </div>
+
+    <!-- REMEMBER + FORGOT -->
+    <div class="row-check">
+      <label class="remember-label">
+        <input type="checkbox" /> Remember me
+      </label>
+      <a href="#" class="forgot-link">Forgot your password?</a>
+    </div>
+
+    <!-- SUBMIT -->
+    <button class="submit-btn" id="submit-btn" onclick="handleSignIn()">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      <span id="btn-text">Sign in as Student</span>
+    </button>
+
+    <a href="#" class="demo-link">Demo Credentials</a>
+  </div>
+</div>
+<script src="js/login.js" defer></script>
+</body>
+</html>

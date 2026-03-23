@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentorship - Community Resource Sharing Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/mentorship.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span class="topbar-title">Community Resource Sharing Platform</span>
+  <div class="topbar-actions">
+    <button class="topbar-btn">
+      <svg width="13" height="13" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/></svg>
+      
+    </button>
+    <button class="topbar-btn">
+      <svg width="13" height="13" fill="currentColor" viewBox="0 0 16 16"><path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/></svg>
+      
+    </button>
+  </div>
+</div>
+
+<div class="layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">CRSP</span>
+    </div>
+    <div class="sidebar-section-label">Community</div>
+    <div class="community-badge">ergjqie</div>
+    <nav>
+      <a class="nav-item" href="crsp_dashboard.html">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        Dashboard
+      </a>
+      <a class="nav-item" href="resources.html">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Resources
+      </a>
+      <a class="nav-item active" href="mentorship.html">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Mentorship
+      </a>
+      <a class="nav-item" href="facilities.html" onclick="showToast('Facilities')">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        Facilities
+      </a>
+      <a class="nav-item" href="notifications.html" onclick="showToast('Notifications')">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        Notifications
+      </a>
+      <a class="nav-item" href="profile.html" onclick="showToast('Profile')">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Profile
+      </a>
+    </nav>
+    <div class="sidebar-bottom">
+      <button class="upload-resource-btn" onclick="showToast('Upload')">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        Upload Resource
+      </button>
+      <div class="user-profile">
+        <div class="user-avatar-sm">R</div>
+        <div class="user-info">
+          <div class="user-name">Rahul Sharma</div>
+          <div class="user-role-text">Student</div>
+        </div>
+        <button class="logout-btn" onclick="window.location.href='login.html'">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        </button>
+      </div>
+      <div class="sidebar-copyright">© 2026 ypsTeam</div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <a class="back-link" href="crsp_dashboard.html">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back
+    </a>
+
+    <div class="page-header-row">
+      <div>
+        <p class="page-subtitle">Ask questions, get guidance from seniors, and share knowledge.</p>
+      </div>
+      <button class="ask-btn" onclick="openModal()">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Ask a Question
+      </button>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="filter-tabs">
+      <button class="filter-tab all active" onclick="filterPosts('All', this)">All</button>
+      <button class="filter-tab" onclick="filterPosts('Internship', this)">Internship</button>
+      <button class="filter-tab" onclick="filterPosts('Exams', this)">Exams</button>
+      <button class="filter-tab" onclick="filterPosts('Projects', this)">Projects</button>
+      <button class="filter-tab" onclick="filterPosts('Career', this)">Career</button>
+    </div>
+
+    <!-- QUESTIONS LIST -->
+    <div class="questions-list" id="questions-list">
+
+      <!-- Q1 -->
+      <div class="question-card" data-tags="Internship Placements">
+        <div class="question-body">
+          <div class="vote-col">
+            <button class="vote-btn" onclick="vote(this, 24)" title="Upvote">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+            </button>
+            <span class="vote-count">24</span>
+          </div>
+          <div class="question-content">
+            <div class="question-meta">
+              <div class="q-avatar" style="background: linear-gradient(135deg,#2ea043,#3fb950);">A</div>
+              <span class="q-author">Anonymous</span>
+              <span class="q-dot">•</span>
+              <span class="q-time">2 hours ago</span>
+            </div>
+            <div class="question-title" onclick="showToast('Question')">How to prepare for upcoming Google internship drive?</div>
+            <div class="question-text">I am currently in my 3rd year and want to know the best resources to prepare for the upcoming Google internship drive. Any seniors who cracked it last year?</div>
+            <div class="question-footer">
+              <div class="tags-row">
+                <span class="q-tag">
+                  <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                  Internship
+                </span>
+                <span class="q-tag">
+                  <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                  Placements
+                </span>
+              </div>
+              <div class="replies-count">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                1 replies
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="replies-section">
+          <div class="reply-item">
+            <div class="reply-avatar" style="background: linear-gradient(135deg,#1158a7,#388bfd);">V</div>
+            <div class="reply-content">
+              <div class="reply-header">
+                <span class="reply-author">Vikram Singh</span>
+                <span class="reply-time">1 hour ago</span>
+              </div>
+              <div class="reply-text">Focus heavily on LeetCode medium/hard problems, especially Graphs and DP. Also, make sure your CS fundamentals (OS, DBMS, Networks) are strong.</div>
+              <button class="reply-like liked" onclick="toggleLike(this, 15)">
+                <svg width="13" height="13" fill="currentColor" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                15
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="question-card" data-tags="Projects Career">
+        <div class="question-body">
+          <div class="vote-col">
+            <button class="vote-btn" onclick="vote(this, 12)" title="Upvote">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+            </button>
+            <span class="vote-count">12</span>
+          </div>
+          <div class="question-content">
+            <div class="question-meta">
+              <div class="q-avatar" style="background: linear-gradient(135deg,#1158a7,#388bfd);">R</div>
+              <span class="q-author">Rahul Sharma</span>
+              <span class="q-dot">•</span>
+              <span class="q-time">1 day ago</span>
+            </div>
+            <div class="question-title" onclick="showToast('Question')">Best resources for learning React?</div>
+            <div class="question-text">I want to start web development. What are the best resources to learn React from scratch?</div>
+            <div class="question-footer">
+              <div class="tags-row">
+                <span class="q-tag">
+                  <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                  Projects
+                </span>
+                <span class="q-tag">
+                  <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                  Career
+                </span>
+              </div>
+              <div class="replies-count">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                3 replies
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="replies-section">
+          <div class="reply-item">
+            <div class="reply-avatar" style="background: linear-gradient(135deg,#6e40c9,#a371f7);">P</div>
+            <div class="reply-content">
+              <div class="reply-header">
+                <span class="reply-author">Priya Patel</span>
+                <span class="reply-time">20 hours ago</span>
+              </div>
+              <div class="reply-text">The official React documentation is excellent. Pair it with building small projects. YouTube channels focused on frontend development are also very helpful for beginners.</div>
+              <button class="reply-like" onclick="toggleLike(this, 8)">
+                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                8
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="question-card" data-tags="Exams">
+        <div class="question-body">
+          <div class="vote-col">
+            <button class="vote-btn" onclick="vote(this, 8)" title="Upvote">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+            </button>
+            <span class="vote-count">8</span>
+          </div>
+          <div class="question-content">
+            <div class="question-meta">
+              <div class="q-avatar" style="background: linear-gradient(135deg,#7d4e00,#c8872a);">N</div>
+              <span class="q-author">Neha Gupta</span>
+              <span class="q-dot">•</span>
+              <span class="q-time">2 days ago</span>
+            </div>
+            <div class="question-title" onclick="showToast('Question')">Tips for cracking the mid-semester OS exam?</div>
+            <div class="question-text">The Operating Systems exam is next week. What are the most important topics to focus on? Any previous year pattern insights would help.</div>
+            <div class="question-footer">
+              <div class="tags-row">
+                <span class="q-tag">
+                  <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                  Exams
+                </span>
+              </div>
+              <div class="replies-count">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                2 replies
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="replies-section">
+          <div class="reply-item">
+            <div class="reply-avatar" style="background: linear-gradient(135deg,#1a6e2e,#3fb950);">A</div>
+            <div class="reply-content">
+              <div class="reply-header">
+                <span class="reply-author">Amit Kumar</span>
+                <span class="reply-time">1 day ago</span>
+              </div>
+              <div class="reply-text">Focus on process scheduling, deadlocks, and memory management. Those three topics usually cover most of the marks. Check the PYQs in the Resource Repository!</div>
+              <button class="reply-like" onclick="toggleLike(this, 6)">
+                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                6
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end questions-list -->
+  </main>
+</div>
+
+<!-- ASK A QUESTION MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal-title">Ask a Question</span>
+      <button class="modal-close" onclick="closeModal()">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <label class="modal-label">Question Title</label>
+    <input class="modal-input" id="q-title" type="text" placeholder="e.g. How to prepare for placements?" />
+    <label class="modal-label">Description</label>
+    <textarea class="modal-textarea" id="q-desc" placeholder="Provide more details about your question..."></textarea>
+    <label class="modal-label">Category</label>
+    <select class="modal-select" id="q-category">
+      <option value="">Select a category</option>
+      <option>Internship</option>
+      <option>Exams</option>
+      <option>Projects</option>
+      <option>Career</option>
+      <option>General</option>
+    </select>
+    <div class="modal-footer">
+      <button class="modal-cancel" onclick="closeModal()">Cancel</button>
+      <button class="modal-submit" onclick="submitQuestion()">Post Question</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toast-container"></div>
+<script src="js/mentorship.js" defer></script>
+</body>
+</html>
